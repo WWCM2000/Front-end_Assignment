@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+
+    
+    
+
+</head>
+<body>
+    <div>
+    <div class="absolute font-[Averta] ">
+        <nav class="absolute z-10 w-full py-8 ob">
+            <!-- Primary Navigation Menu -->
+            <div class="flex items-center justify-between w-full">
+                <!--Logo -->
+                <img src="src/Leading content.png" class="absolute w-16 p-1 m-1 md:p-0 md:m-5  lg:w-20 left-10 top-0"> 
+            </div> 
+
+            <div class="absolute top-0 right-0 w-16 m-2 font-semibold leading-10 h-11 box">
+                <a href="#" id="toggleMenu" class="p-1">
+                    <img src="src/align-right.png" alt="Menu" class="absolute w-6 p-1 m-1 md:p-0 md:m-0 lg:w-10 left-7 md:left-0 md:top-3 lg:left-1 " id="menuIcon">
+                    <i class="hidden fas fa-times" id="closeIcon"></i>
+                </a>
+                <ul id="myLinks" class="absolute right-0 hidden py-2 mt-2 text-gray-800 bg-white rounded shadow ">
+                    <li><a href="#news" class="block px-4 py-2 hover:bg-gray-200">News</a></li>
+                    <li><a href="#contact" class="block px-4 py-2 hover:bg-gray-200">Contact</a></li>
+                    <li><a href="#about" class="block px-4 py-2 hover:bg-gray-200">About</a></li>
+                </ul>
+            </div>
+               
+<!--js for pop menu -->
+<script>
+  document.getElementById('toggleMenu').addEventListener('click', function() {
+    var myLinks = document.getElementById('myLinks');
+    myLinks.classList.toggle('hidden');
+    
+    var menuIcon = document.getElementById('menuIcon');
+    var closeIcon = document.getElementById('closeIcon');
+    menuIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+});
+
+</script>
+        </nav>
+
+        
+        <!-- text area -->
+        <div class="absolute bottom-0 inline-block p-5 left-7">
+            <h1 class="font-[Averta] text-4xl md:text-7xl leading-none">
+                <span class="bg-[#13253E] text-white">BUILDING</span>
+                <br>
+                <span class="bg-[#13253E] text-white">BETTER FUTURES</span>
+            </h1>
+        </div>
+
+        <!--bg image -->
+        <img class="" src="src/bg-1.png">
+
+
+        <!-- flex boxes  -->
+        <div class="absolute flex flex-wrap h-[150px] md:h-[250px] lg:h-[350px]">
+            <div class=" w-80 md:w-[650px] lg:w-[960px] bg-[#2B534F] text-xs md:text-2xl lg:text-3xl text-white flex justify-center">
+                <h1 class="relative w-full text-left left-5 top-6 drop-shadow-sm ">KMD Investments Ltd. established in 2019 is a Private<br>Investments company with investments in Management Consultancy,Real Estate and Hospitality sectors</h1>
+                
+                <div class="absolute bottom-5 md:top-40 left-5">
+                    <button type="button" onclick="alert('hello')" class=" border border-[#B68066] text-white px-1 py-1 rounded-md">LEARN MORE</button>
+
+                </div>
+            </div>
+            <div class="relative justify-center left-14 top-7 md:top-10 md:left-20 lg:left-36 drop-shadow-sm">
+                <h1 class=""><img src="src/KMD_Logo_Green 1.png" alt="logo" class="w-20 h-20 md:h-40 md:w-40" ></h1>
+          
+            </div>
+<!-- heading -->
+            <div class="absolute bg-white top-[150px] md:top-[250px] w-[540px] md:w-[1007px] lg:w-[1300px] h-[100px] md:h-[200px] text-center p-7 ">
+                <h1 class="text-center text-[10px]  text-[#B68066] md:text-[20px] ">OUR SECTORS</h1>
+                <h1 class="text-[#13253E] text-[20px] uppercase font-bold md:text-[40px]">drive commercial success and <br>sustainable growth</h1>
+            </div>
+        </div>
+        
+        
+             
+    </div>
+
+    <!-- images -->
+    <div class="absolute flex flex-nowrap top-[550px] md:top-[960px] lg:top-[1110px] ">
+        <div><img src="src/image 8.png" alt="a" class="w-[180px] md:w-[335px] lg:w-[448px] text-center ">
+            <button type="button" onclick="alert('Welcome for Management Consultancy')" class="  bg-[#13253E] text-white text-[12px] w-[180px] h-10 md:w-[335px] md:h-20 md:text-[20px] lg:text-[30px] lg:w-[448px]">Management Consultancy</button>
+            <img src="src/KMD_Pattern_Blue-01 3.png" alt="a" class="w-[180px] md:w-[335px] lg:w-[448px] ">
+        </div>
+        <div><img src="src/image 9.png" alt="b" class="w-[180px] md:w-[335px] lg:w-[448px] text-center ">
+            <button type="button" onclick="alert('Real Estate')" class="  bg-[#2B534F] text-white text-[12px] w-[180px] h-10 md:w-[335px] md:h-20 md:text-[20px] lg:text-[30px] lg:w-[448px]">Real Estate</button>
+            <img src="src/KMD_Pattern_Blue-01 3.png" alt="a" class="w-[180px] md:w-[335px] lg:w-[448px] ">
+        </div>
+        <div><img src="src/image 10.png" alt="c" class="w-[180px] md:w-[335px] lg:w-[448px] text-center ">
+            <button type="button" onclick="alert('Hospitality')" class="  bg-[#B68066] text-white text-[12px]  w-[180px] h-10  md:w-[335px] md:h-20 md:text-[20px] lg:text-[30px] lg:w-[448px]">Hospitality</button>
+            <img src="src/KMD_Pattern_Blue-01 3.png" alt="a" class="w-[180px] md:w-[335px] lg:w-[448px] ">
+        </div>
+        
+        
+    </div>
+    
+    <!-- footer -->
+    <footer id="about" class="absolute flex flex-wrap bg-[#13253E] h-[180px] md:h-[350px] lg:h-[400px] w-[541px] md:w-[1006px] lg:w-[1344px] top-[820px] md:top-[1468px] lg:top-[1762px] ">
+        <div class="">
+            <img src="src/logo-white.png" alt="f-logo" class=" relative w-9 h-9 md:w-20 md:h-20 lg:w-[120px] lg:h-[120px] left-8 md:left-16 top-5 md:top-16 m-1  " >
+
+           <div class="relative ">
+            <a href="#"><img src="src/Icon.png" alt="a"  class="absolute w-3 h-3 md:w-6 md:h-6 m-2 md:m-7 top-5 md:top-14 left-7 md:left-10" ></a>
+            <a href="#"><img src="src/Icon2.png" alt="b" class="absolute w-3 h-3 md:w-6 md:h-6 m-2 md:m-7 top-5 md:top-14 left-14 md:left-24" ></a>
+            <a href="#"><img src="src/Icon3.png" alt="c" class="absolute w-3 h-3 md:w-6 md:h-6 m-2 md:m-7 top-5 md:top-14 left-20 md:left-36"></a>
+           </div>
+        </div>
+        <div class="relative text-[10px] h-[150px] w-[50px] md:w-[80px] md:text-[18px] left-28 md:left-[180px] lg:left-[300px] top-5 md:top-16 p-1 text-white m-1">
+            <h1 class="text-[#B68066]">GENERAL</h1>
+            <a href=""><h1>Home</h1></a>
+            <a href=""><h1>About</h1></a>
+            <a href=""><h1>News</h1></a>
+            <a href=""><h1>Careers</h1></a>
+            <a href=""><h1>Contact</h1></a>
+        </div>
+        <div class="relative text-[10px] h-[150px] w-[130px] md:w-[240px] md:text-[18px] left-28 md:left-[210px] lg:left-[400px] top-5 md:top-16 p-1 text-white m-1">
+            <h1 class="text-[#B68066]">SERVICES</h1>
+            <a href=""><h1>Management Consultancy</h1></a>
+            <a href=""><h1>Real Estate</h1></a>
+            <a href=""><h1>Hospitality</h1></a>
+         
+            
+        </div>
+        
+        <div class="relative text-[10px] h-[150px] w-[180px] md:w-[360px] md:text-[18px] left-28  md:left-[230px] lg:left-[500px] top-5 md:top-16 p-1">
+            <h1 class="text-[#B68066] uppercase">Subscribe to our newsletter</h1>
+            <h1 class="text-white">The latest news, articles, and resources,<br> sent to your inbox weekly.</h1>
+            <button type="button" onclick="alert('Thank you..!')" class="relative left-28 md:left-[235px] bg-[#2B534F] text-white top-6 md:top-10 px-1 py-1">SUBSCRIBE</button>
+            <label class="block">
+                <input type="email" name="email" class=" px-1 py-1 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-24 md:w-56 text-[10px] md:text-[20px] focus:ring-1" placeholder="you@example.com" />
+                
+              </label>
+              
+            
+        </div>
+       <div class="relative w-90 lg:w-[1350px] m-8 lg:m-20 bottom-12  md:top-5">
+        <img src="src/Top border.png" alt="border" class="">
+       </div>
+
+        <div class="absolute text-[10px] md:text-[16px] lg:text-[20px] top-[155px] md:top-[300px] lg:top-[340px] left-[150px] md:left-[300px] lg:left-[430px]">
+           <h1 class="text-[#9CA3AF]">© 2022 KMD Investments Ltd. All rights reserved.</h1> 
+        </div>
+        
+        
+    </footer>
+
+    
+
+    </div>
+    
+        
+        
+</body>
+</html>
